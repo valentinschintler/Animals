@@ -44,18 +44,20 @@ public class Animal {
         this.animalLoud = animalLoud;
     }
 
+    //Methoden
+
     public String giveAnimalLoud() {
-        return animalLoud;
+        return getAnimalLoud();
     }
 
     public String getNameAndAge() {
-        return name + age;
+        return getName() + "" + getAge();
     }
 
     public String ageCategory() {
         if (age <=2)
             return "baby animal";
-        if (age >2 && age <=4)
+        if (age <=4)
             return "young animal";
         if (age >4)
             return "old animal";

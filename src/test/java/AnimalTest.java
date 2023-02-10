@@ -19,22 +19,22 @@ class AnimalTest {
 
     @Test
     void testGiveAnimalLoud() {
-        Assertions.assertEquals("Miau", "Miau");
-        Assertions.assertEquals("roar", "roar");
-        Assertions.assertEquals("Wuff", "Wuff");
+        Assertions.assertEquals("Miau", cat.animalLoud);
+        Assertions.assertEquals("Roar", lion.animalLoud);
+        Assertions.assertEquals("Wuff", dog.animalLoud);
     }
 
     @Test
     void testGetNameAndAge() {
-        Assertions.assertEquals("Katze" + "5", "Katze" + "5");
-        Assertions.assertEquals("Löwe" + "3", "Löwe" + "3");
-        Assertions.assertEquals("Hund" + "8", "Hund" + "8");
+        Assertions.assertEquals("Katze" + "5", cat.getNameAndAge());
+        Assertions.assertEquals("Löwe" + "3", lion.getNameAndAge());
+        Assertions.assertEquals("Hund" + "8", dog.getNameAndAge());
     }
 
     @Test
     void testAgeCategory() {
-        Assertions.assertEquals("old animal", "old animal" );
-        Assertions.assertEquals("young animal", "young animal" );
-        Assertions.assertEquals("old animal", "old animal" );
+        Assertions.assertEquals("old animal", cat.ageCategory());
+        Assertions.assertEquals("young animal", lion.ageCategory());
+        Assertions.assertEquals("old animal", dog.ageCategory());
     }
 }
